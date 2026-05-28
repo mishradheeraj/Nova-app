@@ -4,29 +4,25 @@ import { Fullpagecomponent } from './layout/fullpagecomponent/fullpagecomponent'
    
 
 export const routes: Routes = [
-     {
-    path:'',
-    children:[
-      {
-        path:'', redirectTo:'auth', pathMatch:'full'
-      },
-      {
-        path:'auth',
-        component:Blankpagecomponent,
-        loadChildren: () => import('./modules/auth/auth-module').then(m=>m.AuthModule)
-      },
-      {
-        path:'dashboard',
-        component:Fullpagecomponent,
-        loadChildren: ()=> import('./modules/dashboard/dashboard-module').then(m=>m.DashboardModule)
-      },
-      {
-        path:'product',
-        component:Fullpagecomponent,
-        loadChildren: ()=> import('./modules/product/product-module').then(m =>m.ProductModule)
-      }
-    ]
+  {
+    path: '',
+    redirectTo: 'auth',
+    pathMatch: 'full'
+  },
+  {
+    path: 'auth',
+    component: Blankpagecomponent,
+    loadChildren: () => import('./modules/auth/auth-module').then(m => m.AuthModule)
+  },
+  {
+    path: 'dashboard',
+    component: Fullpagecomponent,
+    loadChildren: () => import('./modules/dashboard/dashboard-module').then(m => m.DashboardModule)
+  },
+  {
+    path: 'product',
+    component: Fullpagecomponent,
+    loadChildren: () => import('./modules/product/product-module').then(m => m.ProductModule)
   }
 ];
-
 
