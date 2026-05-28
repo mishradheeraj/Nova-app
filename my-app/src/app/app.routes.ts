@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { Blankpage } from './layout/blankpage/blankpage';
-import { Fullpage } from './layout/fullpage/fullpage';
+import { Blankpagecomponent } from './layout/blankpagecomponent/blankpagecomponent';
+import { Fullpagecomponent } from './layout/fullpagecomponent/fullpagecomponent';
+   
 
 export const routes: Routes = [
      {
@@ -11,17 +12,17 @@ export const routes: Routes = [
       },
       {
         path:'auth',
-        component:Blankpage,
+        component:Blankpagecomponent,
         loadChildren: () => import('./modules/auth/auth-module').then(m=>m.AuthModule)
       },
       {
         path:'dashboard',
-        component:Fullpage,
+        component:Fullpagecomponent,
         loadChildren: ()=> import('./modules/dashboard/dashboard-module').then(m=>m.DashboardModule)
       },
       {
         path:'product',
-        component:Fullpage,
+        component:Fullpagecomponent,
         loadChildren: ()=> import('./modules/product/product-module').then(m =>m.ProductModule)
       }
     ]

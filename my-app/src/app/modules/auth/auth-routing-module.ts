@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Login } from './login/login';
-import { Signup } from './signup/signup';
-import { Forget } from './forget/forget';
+import { Logincomponnet } from './logincomponnet/logincomponnet';
+import { Signupcomponent } from './signupcomponent/signupcomponent';
+import { Forgetcomponent } from './forgetcomponent/forgetcomponent';
 
 const routes: Routes = [
     {
     path:'',
-    component:Login
+    component:Logincomponnet
   },
   {
     path:'create',
-    component:Signup
+    component:Signupcomponent
   },
   {
     path:'forget',
-    component:Forget
+    component:Forgetcomponent
   }
 ];
 

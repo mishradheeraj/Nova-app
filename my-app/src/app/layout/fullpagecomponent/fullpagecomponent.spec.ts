@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Fullpage } from './fullpage';
+import { Fullpagecomponent } from './fullpagecomponent';
 
-describe('Fullpage', () => {
-  let component: Fullpage;
-  let fixture: ComponentFixture<Fullpage>;
+describe('Fullpagecomponent', () => {
+  let component: Fullpagecomponent;
+  let fixture: ComponentFixture<Fullpagecomponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Fullpage],
+      imports: [Fullpagecomponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Fullpage);
+    fixture = TestBed.createComponent(Fullpagecomponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Forget } from './forget';
+import { Blankpagecomponent } from './blankpagecomponent';
 
-describe('Forget', () => {
-  let component: Forget;
-  let fixture: ComponentFixture<Forget>;
+describe('Blankpagecomponent', () => {
+  let component: Blankpagecomponent;
+  let fixture: ComponentFixture<Blankpagecomponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Forget],
+      imports: [Blankpagecomponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Forget);
+    fixture = TestBed.createComponent(Blankpagecomponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
